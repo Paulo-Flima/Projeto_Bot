@@ -1,0 +1,1 @@
+--- pip install python-dotenv / pip install discord.py yt-dlp PyNaCl
