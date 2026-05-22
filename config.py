@@ -1,0 +1,3 @@
+PREFIX = "!"
+
+LOG_CHANNEL_NAME = "logs"
