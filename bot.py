@@ -3,8 +3,15 @@ from discord.ext import commands
 import os
 from config import TOKEN, PREFIX
 
-intents = discord.Intents.all()
+# --- ADICIONA ESTAS LINHAS AQUI ---
+import ctypes
+try:
+    discord.opus.load_opus(ctypes.util.find_library('opus'))
+except Exception:
+    pass # Se não encontrar, o discord.py tentará usar a dele por padrão
+# ----------------------------------
 
+intents = discord.Intents.all()
 bot = commands.Bot(command_prefix=PREFIX, intents=intents)
 
 @bot.event
