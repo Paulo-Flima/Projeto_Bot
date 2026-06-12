@@ -68,7 +68,7 @@ class Pokemon(commands.Cog):
             return
 
         # Chance de 1 em 15 de aparecer um Pokémon
-        chance_aparecer = random.randint(1, 2)
+        chance_aparecer = random.randint(1, 10)
         
         if chance_aparecer == 1:
             # Sorteia um ID de Pokémon (atualmente a PokéAPI vai até ao 1025)
